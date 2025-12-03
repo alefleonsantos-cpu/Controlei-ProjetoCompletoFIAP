@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlei - Gerenciar Despesas Fixas</title>
+    <link rel="stylesheet" href="../CSS/despesasfixas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="manage-container">
+        
+        <header class="manage-header">
+            <h1>Gerenciar Despesas Fixas</h1>
+            <p>Visualize, adicione ou edite suas contas recorrentes.</p>
+        </header>
+
+        <div class="input-form-box">
+            <h3>Adicionar Nova Despesa Fixa</h3>
+            <form id="fixed-expense-form">
+                <div class="input-row">
+                    <div class="input-group half-width">
+                        <label for="expense-desc">Descrição</label>
+                        <input type="text" id="expense-desc" name="expense-desc" placeholder="Ex: Aluguel, Mensalidade da Academia" required>
+                    </div>
+                    <div class="input-group half-width">
+                        <label for="expense-value">Valor (R$)</label>
+                        <input type="number" id="expense-value" name="expense-value" placeholder="0,00" step="0.01" min="0" required>
+                    </div>
+                </div>
+                
+                <div class="input-row">
+                    <div class="input-group half-width">
+                        <label for="expense-category">Categoria</label>
+                        <select id="expense-category" name="expense-category" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="moradia">Moradia</option>
+                            <option value="assinaturas">Assinaturas</option>
+                            <option value="educacao">Educação</option>
+                            <option value="saude">Saúde</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="input-group half-width">
+                        <label for="expense-day">Dia do Vencimento</label>
+                        <input type="number" id="expense-day" name="expense-day" placeholder="Ex: 5" min="1" max="31" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit primary-btn">Adicionar Despesa</button>
+            </form>
+        </div>
+
+        <div class="data-table-box">
+            <h3>Lista de Despesas Fixas</h3>
+            <table class="fixed-expenses-table">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor (R$)</th>
+                        <th>Vencimento</th>
+                        <th>Categoria</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-id="1">
+                        <td>Aluguel</td>
+                        <td class="expense-amount">1.800,00</td>
+                        <td>Dia 5</td>
+                        <td>Moradia</td>
+                        <td>
+                            <button class="btn-action btn-edit">Editar</button>
+                            <button class="btn-action btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr data-id="2">
+                        <td>Mensalidade Academia</td>
+                        <td class="expense-amount">99,90</td>
+                        <td>Dia 10</td>
+                        <td>Saúde</td>
+                        <td>
+                            <button class="btn-action btn-edit">Editar</button>
+                            <button class="btn-action btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr data-id="3">
+                        <td>Netflix</td>
+                        <td class="expense-amount">49,90</td>
+                        <td>Dia 25</td>
+                        <td>Assinaturas</td>
+                        <td>
+                            <button class="btn-action btn-edit">Editar</button>
+                            <button class="btn-action btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+
+        <a href="../HTLM/dashbord.html" class="back-link">← Voltar para o Dashboard</a>
+    </div>
+</body>
+</html>

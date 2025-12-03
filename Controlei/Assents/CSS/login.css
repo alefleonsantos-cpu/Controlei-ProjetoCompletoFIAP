@@ -1,0 +1,115 @@
+/* Importação da Fonte Google Fonts */
+/* Este é um comentário informativo. A regra real para importação deve estar no topo do arquivo CSS ou no HTML. */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte principal para todo o corpo */
+    background-color: #f4f7f6; /* Fundo cinza claro para o corpo da página */
+    display: flex; /* Habilita o Flexbox para centralização */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente (o container de login) */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da viewport */
+    margin: 0; /* Remove margens padrão do corpo */
+}
+
+/* Contêiner que envolve toda a caixa de login, limitando a largura. */
+.login-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Define a largura máxima do formulário de login */
+}
+
+/* Caixa principal do formulário de login. */
+.login-box {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 40px;
+    border-radius: 12px; /* Cantos arredondados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para elevação */
+    text-align: center; /* Centraliza o texto (títulos e links) */
+}
+
+/* Título principal do aplicativo (Ex: Nome do App). */
+.login-box h1 {
+    color: #007bff; /* Azul primário */
+    margin-bottom: 5px;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+/* Subtítulo ou cabeçalho do formulário (Ex: "Fazer Login"). */
+.login-box h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Contêiner de cada campo de input (rótulo + campo). */
+.input-group {
+    text-align: left; /* Garante que rótulos e inputs se alinhem à esquerda */
+    margin-bottom: 20px;
+}
+
+/* Rótulo (Label) do campo de input. */
+.input-group label {
+    display: block; /* Garante que o rótulo ocupe sua própria linha */
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 400;
+    font-size: 0.95em;
+}
+
+/* Campo de input (caixa de texto para email/senha). */
+.input-group input {
+    width: 100%; /* Ocupa 100% da largura do input-group */
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    font-size: 1em;
+    transition: border-color 0.3s; /* Transição suave para o efeito de foco */
+}
+
+/* Efeito de foco (quando o usuário clica no campo). */
+.input-group input:focus {
+    border-color: #007bff; /* Destaca a borda com a cor primária */
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Botão principal de Login. */
+.login-button {
+    width: 100%; /* Largura total */
+    padding: 15px;
+    background-color: #007bff; /* Azul primário */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+}
+
+/* Efeito de hover no botão de login. */
+.login-button:hover {
+    background-color: #0056b3; /* Um azul mais escuro ao passar o mouse */
+}
+
+/* Contêineres para links secundários (Esqueci a Senha, Cadastre-se). */
+.forgot-password, .register-link {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+/* Estilo para os próprios links. */
+.forgot-password a, .register-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Efeito de hover e sublinhado nos links secundários. */
+.forgot-password a:hover, .register-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

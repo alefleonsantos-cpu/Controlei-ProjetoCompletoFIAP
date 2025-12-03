@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlei - Investimentos</title>
+    <link rel="stylesheet" href="../CSS/investimento.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+ 
+    <body>
+    <div class="dashboard-container">
+
+
+    <div class="investments-container">
+        
+        <header class="investments-header">
+            <h1>Portfólio de Investimentos</h1>
+            <button class="btn-add-asset">+ Adicionar Novo Ativo</button>
+        </header>
+
+        <div class="summary-cards">
+            
+            <div class="card total-invested">
+                <p class="card-title">Valor Investido (Custo)</p>
+                <h3 class="card-value">R$ 50.000,00</h3>
+                <p class="card-footer">Total aplicado</p>
+            </div>
+
+            <div class="card current-value">
+                <p class="card-title">Valor Atual do Portfólio</p>
+                <h3 class="card-value blue">R$ 55.250,00</h3>
+                <p class="card-footer">Preço de mercado atual</p>
+            </div>
+
+            <div class="card total-return">
+                <p class="card-title">Ganho/Perda Total</p>
+                <h3 class="card-value green">+ R$ 5.250,00 (10.5%)</h3>
+                <p class="card-footer">Desde o início</p>
+            </div>
+        </div>
+
+        <div class="details-section">
+            
+            <div class="chart-box">
+                <h3>Evolução do Portfólio (Último Ano)</h3>
+                <div class="chart-placeholder">
+                    GRÁFICO DE PERFORMANCE
+                </div>
+            </div>
+
+            <div class="assets-box">
+                <h3>Meus Ativos</h3>
+                <table class="assets-table">
+                    <thead>
+                        <tr>
+                            <th>Ativo</th>
+                            <th>Tipo</th>
+                            <th>Qtd.</th>
+                            <th>Preço Médio</th>
+                            <th>Cotação Atual</th>
+                            <th>Ganho/Perda (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AAPL34</td>
+                            <td>BDR</td>
+                            <td>50</td>
+                            <td>R$ 60,00</td>
+                            <td>R$ 65,00</td>
+                            <td class="return-positive">+ 8.33%</td>
+                        </tr>
+                        <tr>
+                            <td>TESLA</td>
+                            <td>Ação</td>
+                            <td>100</td>
+                            <td>R$ 15,00</td>
+                            <td>R$ 14,50</td>
+                            <td class="return-negative">- 3.33%</td>
+                        </tr>
+                        <tr>
+                            <td>Tesouro Selic</td>
+                            <td>Renda Fixa</td>
+                            <td>2</td>
+                            <td>R$ 10.000,00</td>
+                            <td>R$ 10.200,00</td>
+                            <td class="return-positive">+ 2.00%</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+
+        <a href="../HTLM/dashbord.html" class="back-link">← Voltar para o Dashboard</a>
+
+</a>
+    </div>
+</body>
+</html>
