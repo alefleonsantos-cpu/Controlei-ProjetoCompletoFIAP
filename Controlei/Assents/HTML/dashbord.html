@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/dashbord.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="logo">
+                Controlei
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-chart-line"></i> Dashboard
+                </a>
+                <a href="./investimento.html" class="nav-item">
+                    <i class="fas fa-wallet"></i> Investimentos
+                </a>
+                <a href="../HTLM/transacao.html" class="nav-item">
+                    <i class="fas fa-exchange-alt"></i> Transações
+                </a>
+                <a href="../HTLM/relatorio.html" class="nav-item">
+                    <i class="fas fa-file-alt"></i> Relatórios
+                </a>
+                <a href="../HTLM/configuracao.html" class="nav-item">
+                    <i class="fas fa-cog"></i> Configurações
+                </a>
+                <a href="../HTLM/index.html" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </a>
+            </nav>
+            
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="dashboard-header">
+                <h2>Olá, Alef leon</h2>
+                <a href="../HTLM/transacao.html" class="btn-add">
+    <i class="fas fa-plus"></i> Nova Transação
+</a>
+                
+            </header>
+
+            <div class="summary-cards">
+                
+                <div class="card balance-card">
+                    <p class="card-title">Saldo Atual</p>
+                    <h3 class="card-value blue">R$ 12.450,50</h3> 
+                    <p class="card-footer">Atualizado em 01/Dez</p>
+                </div>
+
+                <div class="card income-card">
+                    <p class="card-title">Receitas do Mês</p>
+                    <h3 class="card-value green">R$ 6.800,00</h3>
+                    <p class="card-footer">+ 15% em relação ao mês passado</p>
+                </div>
+
+                <div class="card expense-card">
+                    <p class="card-title">Despesas do Mês</p>
+                    <h3 class="card-value red">R$ 3.250,25</h3>
+                    <p class="card-footer">- 5% em relação ao mês passado</p>
+                </div>
+            </div>
+
+            <div class="chart-box" style="margin-bottom: 30px;">
+                <h3>Balanço ao Longo do Tempo</h3>
+                <div class="chart-placeholder">Placeholder do Gráfico</div>
+            </div>
+
+            <div class="details-section">
+                
+                <div class="fixed-expenses-box">
+                    <h3>Despesas Fixas Mensais</h3>
+                    <ul class="fixed-expenses-list">
+                        <li class="fixed-item">
+                            <span class="desc">Aluguel</span>
+                            <span class="amount red">R$ 1.800,00</span>
+                        </li>
+                        <li class="fixed-item">
+                            <span class="desc">Mensalidade Internet</span>
+                            <span class="amount red">R$ 120,00</span>
+                        </li>
+                        <li class="fixed-item">
+                            <span class="desc">Assinatura Streaming</span>
+                            <span class="amount red">R$ 49,90</span>
+                        </li>
+                        <li class="fixed-item total">
+                            <span class="desc total-text">Total Fixo Estimado</span>
+                            <span class="amount total-amount">R$ 1.969,90</span>
+                        </li>
+                    </ul>
+                    <a href="../HTLM/despesasfixa.html" class="view-all">Gerenciar Despesas Fixas →</a>
+                </div>
+                
+                <div class="transactions-box">
+                    <h3>Transações Recentes</h3>
+                    <ul class="transaction-list">
+                        <li class="transaction income">
+                            <span class="desc">Salário Mensal</span>
+                            <span class="amount">+ R$ 5.000,00</span>
+                        </li>
+                        <li class="transaction expense">
+                            <span class="desc">Supermercado</span>
+                            <span class="amount">- R$ 320,50</span>
+                        </li>
+                        <li class="transaction expense">
+                            <span class="desc">Aluguel</span>
+                            <span class="amount">- R$ 1.800,00</span>
+                        </li>
+                        <li class="transaction income">
+                            <span class="desc">Freelance (Projeto X)</span>
+                            <span class="amount">+ R$ 750,00</span>
+                        </li>
+                    </ul>
+                    <a href="./todastransacoes.html" class="view-all">Ver todas as transações →</a>
+                </div>
+
+            </div>
+            </main>
+    </div>
+</body>
+</html>

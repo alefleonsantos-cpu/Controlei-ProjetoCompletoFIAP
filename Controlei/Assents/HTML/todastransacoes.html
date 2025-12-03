@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlei - Todas as Transações</title>
+    <link rel="stylesheet" href="../CSS/todastransacoes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="transactions-view-container">
+        
+        <header class="view-header">
+            <h1>Histórico Completo de Transações</h1>
+            <p>Filtre e revise todas as movimentações da sua conta.</p>
+        </header>
+
+        <div class="filter-search-section">
+            <div class="input-group">
+                <label for="type-filter">Tipo:</label>
+                <select id="type-filter">
+                    <option value="todos">Todos</option>
+                    <option value="receita">Receita</option>
+                    <option value="despesa">Despesa</option>
+                    <option value="transferencia">Transferência</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="category-filter">Categoria:</label>
+                <select id="category-filter">
+                    <option value="todas">Todas as Categorias</option>
+                    <option value="salario">Salário</option>
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="moradia">Moradia</option>
+                </select>
+            </div>
+            <div class="input-group search-group">
+                <label for="search-input">Buscar:</label>
+                <input type="text" id="search-input" placeholder="Buscar por descrição...">
+            </div>
+            <button class="btn-filter primary-btn">Aplicar</button>
+        </div>
+
+        <div class="data-table-box">
+            <table class="transactions-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Conta</th>
+                        <th>Valor (R$)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="transaction-row income">
+                        <td>01/12/2025</td>
+                        <td>Receita</td>
+                        <td>Salário Mensal</td>
+                        <td>Salário</td>
+                        <td>Conta Corrente</td>
+                        <td class="amount-cell positive">+ 5.000,00</td>
+                        <td>
+                            <button class="btn-action btn-edit">Editar</button>
+                            <button class="btn-action btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr class="transaction-row expense">
+                        <td>02/12/2025</td>
+                        <td>Despesa</td>
+                        <td>Supermercado Pão Bom</td>
+                        <td>Alimentação</td>
+                        <td>Cartão de Crédito</td>
+                        <td class="amount-cell negative">- 320,50</td>
+                        <td>
+                            <button class="btn-action btn-edit">Editar</button>
+                            <button class="btn-action btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                     <tr class="transaction-row transfer">
+                        <td>02/12/2025</td>
+                        <td>Transferência</td>
+                        <td>Transferência para Poupança</td>
+                        <td>Transferência</td>
+                        <td>Conta Corrente → Poupança</td>
+                        <td class="amount-cell neutral">0,00</td>
+                        <td>
+                            <button class="btn-action btn-edit">Editar</button>
+                            <button class="btn-action btn-delete">Excluir</button>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+        
+        <a href="../HTLM/dashbord.html" class="back-link">← Voltar para o Dashboard</a>
+    </div>
+</body>
+</html>
