@@ -139,3 +139,8 @@ Moeda Padrão: Opção para definir a moeda principal (Ex: Real, Dólar, Euro).
 Aparência: Alternância entre temas (Ex: Tema Escuro).
 
 Notificações: Gestão de alertas e lembretes (Ex: para despesas fixas).
+
+
+
+"Link do Projeto no GITHUB"
+https://github.com/alefleonsantos-cpu/Controlei/tree/main/Controlei/Assets
